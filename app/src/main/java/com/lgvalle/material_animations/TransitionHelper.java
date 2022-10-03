@@ -69,5 +69,12 @@ class TransitionHelper {
         }
         participants.add(new Pair<>(view, view.getTransitionName()));
     }
+    
+    private static void addTransitionParticipants(View view, List<Pair> participants) {
+        if (view == null) {
+            return;
+        }
+        participants.add(new Pair<>(view, view.getTransitionName()));
+    }
 
 }
